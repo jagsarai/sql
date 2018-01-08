@@ -1,0 +1,47 @@
+1. STRING, INT, DATE, NUMBER(float), NUMBER(decimal) 
+
+2. Database will be used when we have mutliple clients trying to manipulate data and we need data persistance across all clients. Text files like JSON will be used when we want to retrive or send data to our client with a web server request. 
+
+3. SQL is declative languange that we dont actually specify how an action or algorithim is going to work, we simply give a command and the language automtically picks the best way to perfrom our query. Other lanuages are procedural meaning that we define algorithim with funcitons that perform a task with every detail we give it. 
+
+4. Databases data is stored into tables that contian various columns that describes a certrain category of the table and the values within each category describes the category name. The rows of the table represent unique instances of the columns. For example if we a purchases tabel with columns to date, amount, email. Each indivual purchase with its own values will be represented with rows. So if we have 3 purchases, we will have 3 rows in our table. 
+
+5. See Above. 
+
+6. String, Integer, Float, Object.
+
+7. 
+    SELECT date, amount
+     FROM payments;
+    
+    Get the date and amount from the payments table.
+
+     SELECT amount
+     FROM payments
+     WHERE amount > 500;
+
+    Get the values greater than 500 from the amounts columns inside of the payments table. 
+
+     SELECT *
+     FROM payments
+     WHERE payee = "Mega Foods";
+
+    Get all the payees  equal to "Mega Foods" from payments table 
+
+
+8.  Select the email and sign-up date for the user named DeAndre Data.
+    SELECT email, sign-up
+    FROM users
+    WHERE name = 'DeAndre Data';
+
+
+    Select the user ID for the user with email 'aleesia.algorithm@uw.edu'.
+    SELECT userid 
+    FROM users 
+    WHERE email ='aleesia.algorithim@uw.edu';
+
+    Select all the columns for the user ID equal to 4.  
+    SELECT *
+    FROM users
+    WHERE userid = 4;
+
